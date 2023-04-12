@@ -1,0 +1,143 @@
+body, figure, h1, h2,h3, p, form, input, textarea, ul, li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+
+header {
+background-color: #007bff;
+color: #fff;
+padding: 20px;
+}
+
+header h1 {
+font-size: 36px;
+}
+
+nav ul {
+display: flex;
+}
+
+nav ul li {
+margin-left: 20px;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+color: #ffc107;
+}
+
+section {
+padding: 50px;
+}
+
+section h2 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.articulo {
+margin-bottom: 40px;
+}
+
+.articulo img {
+width: 100%;
+max-height: 300px;
+object-fit: cover;
+border-radius: 4px;
+}
+
+.articulo h3 {
+font-size: 20px;
+margin-top: 10px;
+}
+
+.articulo p {
+margin-top: 10px;
+color: #777;
+}
+
+form label, form textarea {
+display: block;
+margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+background-color: #ffc107;
+}
+
+footer {
+background-color: #f8f9fa;
+color: #777;
+padding: 20px;
+text-align: center;
+}
+
+/* Animaciones /
+/ Fade in en la página de inicio */
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+#inicio {
+animation: fadeIn 1s;
+}
+
+/* Desplazamiento suave al hacer clic en los enlaces del menú */
+html {
+scroll-behavior: smooth;
+}
+
+/* Cambio de color al pasar el ratón sobre los enlaces del menú */
+nav ul li a {
+position: relative;
+}
+
+nav ul li a::before {
+content: "";
+position: absolute;
+bottom: -3px;
+left: 0;
+width: 100%;
+height: 3px;
+background-color: #ffc107;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+opacity: 1;
+}
