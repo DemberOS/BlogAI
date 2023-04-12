@@ -1,0 +1,2 @@
+# BlogAI
+My project BlogAI
